@@ -2,9 +2,10 @@ const express = require('express')
 const path = require('path');
 const app = express();
 
-// Resolves and serves all files in the folder - index html will be the main file
+// Resolves and serves all files in the folder - index html will be the main file - 
 app.use(express.static('./public'))
 
+// This is not needed because we serve all files with the above line. Just for demonstartion purposes.
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './navbar-app/index.html'))
 })
