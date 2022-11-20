@@ -26,6 +26,8 @@ app.post('/login', (req, res) => {
     res.status(401).send(`Invalid payload`);
 })
 
+// TO see it - rename methods-public/htmlindex to .index. and the otiher to javascript.html
+
 app.listen(5000, () => {
     console.log('Listening on port 5000')
 })
